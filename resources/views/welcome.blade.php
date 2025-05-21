@@ -86,10 +86,7 @@
             <p class="baseline">Framework</p>
         </div>
         <ul class="links">
-            <li><a href="https://framework.themosis.com/docs/2.0/installation" target="_blank" title="Getting Started">Getting Started</a></li>
-            <li><a href="https://framework.themosis.com/docs" target="_blank" title="Documentation">Documentation</a></li>
-            <li><a href="https://github.com/themosis" target="_blank" title="GitHub - Themosis">GitHub</a></li>
-            <li><a href="https://twitter.com/Themosis" target="_blank" title="Twitter - Themosis">Twitter</a></li>
+            <li><a href="/personas" title="Ver formulario de personas">Ver formulario</a></li>
         </ul>
     </div>
 </div>

@@ -57,6 +57,7 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'wp.bindings' => \Themosis\Route\Middleware\WordPressBindings::class,
         'wp.can' => \Themosis\Route\Middleware\WordPressAuthorize::class,
-        'wp.headers' => \Themosis\Route\Middleware\WordPressHeaders::class
+        'wp.headers' => \Themosis\Route\Middleware\WordPressHeaders::class,
+        'wp.admin' => \App\Http\Middleware\WordpressAdminAuth::class
     ];
 }
