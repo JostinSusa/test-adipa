@@ -8,7 +8,7 @@
             @csrf
             <div class="card my-4">
                 <div class="card-header">
-                    <h3 class="mb-0">
+                    <h3 class="mb-0 section-title">
                         Crear persona
                     </h3>
                 </div>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="col-12 d-flex justify-content-end gap-2">
                             <a href="{{ route('persona.index') }}" type="button" class="btn btn-secondary">Regresar</a>
-                            <button type="submit" class="btn btn-primary" id="submit-btn">Guardar</button>
+                            <button type="submit" class="btn btn-success" id="submit-btn">Guardar</button>
                         </div>
                     </div>
                 </div>

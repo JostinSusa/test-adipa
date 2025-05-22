@@ -11,3 +11,84 @@ Tags: easy, organized, expressive.
 Text Domain: adipa
 Domain Path: languages
 */
+:root {
+  --primary: #1fbda2;
+  --secondary: #6a1fbd;
+  --complementary: #bd1f3a;
+  --text: #353535;
+}
+
+* {
+  color: var(--text);
+}
+
+.section-title {
+  color: var(--text);
+}
+
+.navbar {
+  padding: 10px 15px;
+  box-shadow: 0 0 10px 5px #00000010;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.7rem;
+  color: var(--primary);
+  font-weight: bolder;
+}
+
+.btn-success {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-success:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  opacity: 0.9;
+}
+.btn-primary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-primary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  opacity: 0.9;
+}
+.btn-danger {
+  background-color: var(--complementary);
+  border-color: var(--complementary);
+}
+.btn-danger:hover {
+  background-color: var(--complementary);
+  border-color: var(--complementary);
+  opacity: 0.9;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  background-color: #fff;
+}
+.table th {
+  background-color: #1fbda2;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.table td {
+  padding: 10px 15px;
+  vertical-align: middle;
+  border-top: 1px solid #f0f0f0;
+}
+
+.table tr:hover td {
+  background-color: #f9f9f9;
+}

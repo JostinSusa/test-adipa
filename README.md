@@ -1,33 +1,69 @@
-Themosis framework
-==================
+# 🧪 Prueba Técnica - Desarrollador Backend (Themosis)
 
-[![Build Status](https://travis-ci.org/themosis/themosis.svg?branch=dev)](https://travis-ci.org/themosis/themosis)
+Este proyecto es una prueba técnica para el cargo de Desarrollador Backend, construida sobre el framework **Themosis 3.1**. Implementa un sistema CRUD completo para gestionar personas, con validación de RUT chileno y acceso restringido a usuarios administradores de Wordpress.
 
-The Themosis framework is a tool aimed to WordPress developers of any levels. But the better WordPress and PHP knowledge you have the easier it is to work with.
+---
 
-Themosis framework is a tool to help you develop websites and web applications faster using [WordPress](https://wordpress.org). Using an elegant and simple code syntax, Themosis framework helps you structure and organize your code and allows you to better manage and scale your WordPress websites and applications.
+## 🧰 Tecnologías utilizadas
 
-Installation
-------------
-Please see the [installation section](https://framework.themosis.com/docs/master/installation/) of the Themosis documentation.
+- PHP 8.4
+- WordPress (con estructura Themosis)
+- Themosis Framework 3.1
+- Laravel Mix
+- Bootstrap 5
+- MySQL
 
-Development team
-----------------
-The framework was created by [Julien Lambé](https://www.themosis.com/), who continues to lead the development.
+---
 
-Contributing
-------------
-Any help is appreciated. The project is open-source and we encourage you to participate. You can contribute to the project in multiple ways by:
+## 📦 Requisitos del sistema
 
-- Reporting a bug issue
-- Suggesting features
-- Sending a pull request with code fix or feature
-- Following the project on [GitHub](https://github.com/themosis)
-- Following us on Twitter: [@Themosis](https://twitter.com/Themosis)
-- Sharing the project around your community
+- PHP >= 8.0
+- Composer
+- Node.js y npm
+- Base de datos MySQL
+- Entorno local con Laravel Valet, Homestead, LocalWP o similar
 
-For details about contributing to the framework, please check the [contribution guide](https://framework.themosis.com/docs/master/contributing).
+---
 
-License
--------
-The Themosis framework is open-source software licensed under [GPL-2+ license](http://www.gnu.org/licenses/gpl-2.0.html).
+## ⚙️ Instalación
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/JostinSusa/test-adipa.git
+cd test-adipa
+```
+2. Instala dependencias PHP:
+
+```bash
+composer install
+```
+
+3. Copia y configura el archivo .env:
+
+```bash
+cp .env.example .env
+# Edita las credenciales DB, URLs, etc.
+php artisan key:generate
+```
+
+4. Instala dependencias JavaScript y compila assets:
+
+```bash
+npm install
+npm run dev
+```
+
+5. Configura tu entorno web (opcional con Valet): 
+
+```bash
+valet link adipa
+valet secure adipa
+```
+
+6. Crea la base de datos (en tu gestor o CLI) y corre las migraciones.
+
+## 🚀 Acceso
+
+Para acceder a la sección protegida del sistema, inicia sesión como administrador de WordPress.
+

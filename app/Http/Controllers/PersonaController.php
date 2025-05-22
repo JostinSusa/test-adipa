@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Persona;
+use App\Rules\RutValidation;
 use Illuminate\Http\Request;
 
 class PersonaController extends Controller
@@ -41,7 +42,7 @@ class PersonaController extends Controller
             [
                 "nombre" => "string|required",
                 "apellido" => "string|required",
-                "rut" => "string|required|unique:personas",
+                "rut" => ["string", "required", "unique:personas", new RutValidation],
                 "fecha_nacimiento" => "date"
             ],
             [

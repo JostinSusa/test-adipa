@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Administración')</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Estilos personalizados (opcional) -->
-    {{-- <link rel="stylesheet" href="{{ asset('themes/mi-tema/assets/styles/app.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('content/themes/adipa/style.css') }}">
+
 </head>
 <body class="bg-light">
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/personas">Administrador de personas</a>
+            <a class="navbar-brand" href="/persona">Administrador de personas</a>
         </div>
     </nav>
 

@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2>Listado de Personas</h2>
+            <h2 class="section-title">Listado de Personas</h2>
             <a href="{{ route('persona.create') }}" class="btn btn-success">Registrar
                 Persona</a>
         </div>
@@ -25,7 +25,7 @@
             <div class="alert alert-warning">No hay registros aún.</div>
         @else
             <table class="table table-bordered table-striped">
-                <thead class="table-dark">
+                <thead>
                     <tr>
                         <th>Nombre</th>
                         <th>Apellido</th>
@@ -40,16 +40,19 @@
                             <td>{{ $person->nombre }}</td>
                             <td>{{ $person->apellido }}</td>
                             <td>{{ $person->rut }}</td>
-                            <td>{{ $person->fecha_nacimiento }}</td>
+                            <td>{{ \Carbon\Carbon::parse($person->fecha_nacimiento)->format('Y-m-d') }}</td>
+
                             <td>
-                                <a href="{{ route('persona.edit', $person->id) }}" class="btn btn-primary btn-sm">Editar</a>
-                                <form action="{{ route('persona.destroy', $person->id) }}" method="POST"
-                                    style="display:inline-block">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm"
-                                        onclick="return confirm('¿Eliminar esta persona?')">Eliminar</button>
-                                </form>
+                                <div class="d-flex justify-content-end gap-2">
+                                    <a href="{{ route('persona.edit', $person->id) }}" class="btn btn-primary btn-sm">Editar</a>
+                                    <form action="{{ route('persona.destroy', $person->id) }}" method="POST"
+                                        style="display:inline-block">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('¿Eliminar esta persona?')">Eliminar</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     @endforeach

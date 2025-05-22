@@ -8,7 +8,7 @@
             @csrf
             @method('PUT')
             <div class="card my-4">
-                <div class="card-header">
+                <div class="card-header section-title">
                     <h3 class="mb-0">
                         Editar persona
                     </h3>
@@ -56,7 +56,7 @@
                         </div>
                         <div class="col-12 d-flex justify-content-end gap-2">
                             <a href="{{ route('persona.index') }}" type="button" class="btn btn-secondary">Regresar</a>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="submit" class="btn btn-success">Guardar</button>
                         </div>
                     </div>
                 </div>
