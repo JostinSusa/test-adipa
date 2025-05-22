@@ -86,7 +86,7 @@
             <p class="baseline">Framework</p>
         </div>
         <ul class="links">
-            <li><a href="/personas" title="Ver formulario de personas">Ver formulario</a></li>
+            <li><a href="/persona" title="Ver formulario de personas">Ver formulario</a></li>
         </ul>
     </div>
 </div>
